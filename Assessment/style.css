@@ -85,7 +85,7 @@ button {
 }
 
 /* Digit button styles */
-.digits-section{
+.digits-section, #back-space{
   display: grid;
   background-color: #404258;
   color: white;
