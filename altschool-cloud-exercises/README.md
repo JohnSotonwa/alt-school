@@ -59,7 +59,7 @@ This sorts the lines in names.txt alphabetically (A–Z).
 
 **Example:**
 
-sort -r name.txt
+*sort -r name.txt*
 
 ![Reverse Sorted List](images/sort-reverse.png)
 
@@ -71,7 +71,7 @@ Shows detailed information about a file (size, time modified, permissions, etc.)
 
 **Example:**
 
-stat file.txt
+*stat file.txt*
 
 ![](images/stat.png)
 
@@ -86,9 +86,10 @@ Removes duplicate lines from a sorted file.
 ![California is Duplicated Here](images/cat.png)
 
 
-sort file.txt | uniq
+*sort file.txt | uniq*
 
 ![Sorts and then removes repeated lines.](images/uniq.png)
+
 
 ## 6. `tac`
 
@@ -96,7 +97,7 @@ Displays the contents of a file in reverse (last line first).
 
 **Example:**
 
-tac file.txt
+*tac file.txt*
 
 ![Opposite of cat](images/tac.png)
 
@@ -106,7 +107,7 @@ Interactive view of system processes, memory, and CPU usage (like top, but bette
 
 **Example:**
 
-htop
+*htop*
 
 ![Use arrows and function keys to manage processes](images/htop.png)
 
@@ -116,7 +117,7 @@ Number lines in a file (more control than cat -n)
 
 **Example:**
 
-nl filename.txt
+*nl filename.txt*
 
 ![More formatting control than cat -n](images/nl.png)
 
@@ -126,7 +127,7 @@ Shuffle lines randomly
 
 **Example:**
 
-shuf filename.txt
+*shuf filename.txt*
 
 ![Randomizes the order of lines. Great for sampling data or creating test cases](images/shuf.png)
 
@@ -136,7 +137,7 @@ Lists previously executed commands.
 
 **Example:**
 
-history
+*history*
 
 ![Useful to find and reuse past commands](images/history.png)
 
