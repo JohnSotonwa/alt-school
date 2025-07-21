@@ -6,20 +6,24 @@ Hidden Gems: 10 Linux Commands You Probably Never Use (But Should)
 
 ## 1. `alias`
 
-**Use:** Create shortcuts for long or frequently used commands.
+Create shortcuts for long or frequently used commands.
 
 **Example:**
 
 alias ll='ls -l'
+
 ![This creates a shortcut ll for ls -l](images/alias.png)
 
-2. unalias
+## 2. `unalias`
+
 You can remove or temporarily disable an alias using the unalias command.
 
 unalias alias_name
-❗️To Remove All Aliases:
 
-unalias -a
+![This removes shortcut ll created for ls -l](images/unalias.png)
+
+❗️To Remove All Aliases: unalias -a
+
 ⚠️ This removes all defined aliases in the current shell session.
 
 Important Notes:
@@ -32,11 +36,16 @@ Example for permanent alias:
 
 echo "alias ll='ls -lah'" >> ~/.bashrc
 source ~/.bashrc
-3. sort
-Use: Sorts lines in a file alphabetically or numerically.
-Example:
+
+## 3. `sort`
+Sorts lines in a file alphabetically or numerically.
+
+**Example:**
 
 sort names.txt
+
+![Sorted List](images/sorted.png)
+
 This sorts the lines in names.txt alphabetically (A–Z).
 
 
@@ -46,64 +55,89 @@ This sorts the lines in names.txt alphabetically (A–Z).
 -n → Numerical sort
 -k → Sort by a specific column
 -t → Specify a delimiter (e.g., comma for CSV)
-Example
+
+**Example:**
 
 sort -r name.txt
+
+![Reverse Sorted List](images/sorted-reverse.png)
+
 In this example, it sorts state.txt in reverse order.
 
 
-4. stat
-Use: Shows detailed information about a file (size, time modified, permissions, etc.).
-Example:
+## 4. `stat`
+Shows detailed information about a file (size, time modified, permissions, etc.).
+
+**Example:**
 
 stat file.txt
+
+![](images/stat.png)
+
 Shows when the file was last modified and its permissions.
 
 
-5. uniq
-Use: Removes duplicate lines from a sorted file.
-Example:
+## 5. `uniq`
+Removes duplicate lines from a sorted file.
+
+**Example:**
+
+![California is Duplicated Here](images/cat.png)
+
 
 sort file.txt | uniq
-Sorts and then removes repeated lines.
 
+![Sorts and then removes repeated lines.](images/uniq.png)
 
-Before (California is Duplicated)
+## 6. `tac`
 
-After
-6. tac
-Use: Displays the contents of a file in reverse (last line first).
-Example:
+Displays the contents of a file in reverse (last line first).
+
+**Example:**
 
 tac file.txt
-Opposite of cat.
+
+![Opposite of cat](images/tac.png)
 
 
-7. htop
-Use: Interactive view of system processes, memory, and CPU usage (like top, but better).
-Example:
+## 7. `htop`
+Interactive view of system processes, memory, and CPU usage (like top, but better).
+
+**Example:**
 
 htop
-Use arrows and function keys to manage processes.
+
+![Use arrows and function keys to manage processes](images/htop.png)
 
 
-8. nl – Number lines in a file (more control than cat -n)
+## 8. `nl`
+Number lines in a file (more control than cat -n)
+
+**Example:**
+
 nl filename.txt
-More formatting control than cat -n.
+
+![More formatting control than cat -n](images/nl.png)
 
 
-9. shuf – Shuffle lines randomly
+## 9. `shuf`
+Shuffle lines randomly
+
+**Example:**
+
 shuf filename.txt
-Randomizes the order of lines. Great for sampling data or creating test cases.
+
+![Randomizes the order of lines. Great for sampling data or creating test cases](images/shuf.png)
 
 
-10. history
-Use: Lists previously executed commands.
-Example:
+## 10. `history`
+Lists previously executed commands.
+
+**Example:**
 
 history
-Useful to find and reuse past commands.
 
+![Useful to find and reuse past commands](images/history.png)
 
 
 
