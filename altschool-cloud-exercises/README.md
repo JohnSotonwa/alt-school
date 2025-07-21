@@ -45,7 +45,7 @@ Sorts lines in a file alphabetically or numerically.
 
 *sort names.txt*
 
-![Sorted List](images/sorted.png)
+![Sorted List](images/cat-original.png)
 
 This sorts the lines in names.txt alphabetically (A–Z).
 
@@ -61,7 +61,7 @@ This sorts the lines in names.txt alphabetically (A–Z).
 
 sort -r name.txt
 
-![Reverse Sorted List](images/sortreverse.png)
+![Reverse Sorted List](images/sort-reverse.png)
 
 In this example, it sorts state.txt in reverse order.
 
