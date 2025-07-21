@@ -10,7 +10,7 @@ Create shortcuts for long or frequently used commands.
 
 **Example:**
 
-alias ll='ls -l'
+*alias ll='ls -l'*
 
 ![This creates a shortcut ll for ls -l](images/alias.png)
 
@@ -18,31 +18,32 @@ alias ll='ls -l'
 
 You can remove or temporarily disable an alias using the unalias command.
 
-unalias alias_name
+*unalias alias_name*
 
 ![This removes shortcut ll created for ls -l](images/unalias.png)
 
-❗️To Remove All Aliases: unalias -a
+❗️To Remove All Aliases: *unalias -a*
 
 ⚠️ This removes all defined aliases in the current shell session.
 
-Important Notes:
+**Important Notes:**
 
-Aliases you define this way are temporary — they last only for your current shell session.
-To make an alias permanent, you must add it to your shell’s config file:
-Bash: ~/.bashrc or ~/.bash_profile
+*Aliases you define this way are temporary — they last only for your current shell session.
+To make an alias permanent, you must add it to your shell’s config file:*
+
+Bash: ~/.bashrc or ~/.bash_profile  
 Zsh: ~/.zshrc
-Example for permanent alias:
 
-echo "alias ll='ls -lah'" >> ~/.bashrc
-source ~/.bashrc
+**Example for permanent alias:**
+
+*echo "alias ll='ls -lah'" >> ~/.bashrc*
 
 ## 3. `sort`
 Sorts lines in a file alphabetically or numerically.
 
 **Example:**
 
-sort names.txt
+*sort names.txt*
 
 ![Sorted List](images/sorted.png)
 
@@ -51,16 +52,16 @@ This sorts the lines in names.txt alphabetically (A–Z).
 
 🔁 Common Options
 
--r → Reverse sort (Z–A)
--n → Numerical sort
--k → Sort by a specific column
--t → Specify a delimiter (e.g., comma for CSV)
+- r → Reverse sort (Z–A)
+- n → Numerical sort
+- k → Sort by a specific column
+- t → Specify a delimiter (e.g., comma for CSV)
 
 **Example:**
 
 sort -r name.txt
 
-![Reverse Sorted List](images/sorted-reverse.png)
+![Reverse Sorted List](images/sortreverse.png)
 
 In this example, it sorts state.txt in reverse order.
 
